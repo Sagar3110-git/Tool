@@ -221,6 +221,13 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+        }
+
+        .tool-card-link {
+            display: block;
+            text-decoration: none;
+            color: inherit;
         }
 
         .tool-card:hover {
@@ -245,6 +252,7 @@
         .tool-card-body h3 {
             font-size: 1.2rem;
             margin-bottom: 10px;
+            color: var(--dark);
         }
 
         .tool-card-body p {
@@ -261,14 +269,13 @@
             border-top: 1px solid var(--light-gray);
         }
 
-        .tool-card-footer a {
-            text-decoration: none;
+        .tool-card-footer span {
             color: var(--primary);
             font-weight: 500;
             font-size: 0.9rem;
         }
 
-        .tool-card-footer .popular-badge {
+        .popular-badge {
             background-color: var(--warning);
             color: white;
             font-size: 0.7rem;
@@ -573,106 +580,100 @@
             <div class="tools-grid">
                 <!-- Tool Card 1 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-compress-alt"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>Image Compressor</h3>
-                        <p>Reduce image file size without losing quality. Perfect for websites and social media.</p>
-                        <div class="tool-card-footer">
-                            <a href="/Tool/image-compressor.html" class="tool-card-link">
-    <div class="tool-card">
-        <div class="tool-card-img">
-            <i class="fas fa-compress-alt"></i>
-        </div>
-        <div class="tool-card-body">
-            <h3>Image Compressor</h3>
-           <p>
-    Reduce image file size without losing quality.
-    <a href="/Tool/image-compressed.html">Try it now</a>.
-</p>
-
-            <div class="tool-card-footer">
-                <span class="popular-badge">POPULAR</span>
-            </div>
-        </div>
-    </div>
-</a>
-
-                            <span class="popular-badge">POPULAR</span>
+                    <a href="image-compressor.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-compress-alt"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>Image Compressor</h3>
+                            <p>Reduce image file size without losing quality. Perfect for websites and social media.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                                <span class="popular-badge">POPULAR</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- Tool Card 2 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-exchange-alt"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>Image Converter</h3>
-                        <p>Convert between JPG, PNG, WebP, GIF and more formats with just one click.</p>
-                        <div class="tool-card-footer">
-                            <a href="image-converter.html">Use Tool</a>
+                    <a href="image-converter.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-exchange-alt"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>Image Converter</h3>
+                            <p>Convert between JPG, PNG, WebP, GIF and more formats with just one click.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- Tool Card 3 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-crop"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>Image Cropper</h3>
-                        <p>Crop your images to any size or aspect ratio. Perfect for profile pictures and thumbnails.</p>
-                        <div class="tool-card-footer">
-                            <a href="image-cropper.html">Use Tool</a>
+                    <a href="image-cropper.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-crop"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>Image Cropper</h3>
+                            <p>Crop your images to any size or aspect ratio. Perfect for profile pictures and thumbnails.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- Tool Card 4 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-expand"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>Image Resizer</h3>
-                        <p>Resize your images to any dimensions while maintaining aspect ratio.</p>
-                        <div class="tool-card-footer">
-                            <a href="image-resizer.html">Use Tool</a>
-                            <span class="popular-badge">POPULAR</span>
+                    <a href="image-resizer.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-expand"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>Image Resizer</h3>
+                            <p>Resize your images to any dimensions while maintaining aspect ratio.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                                <span class="popular-badge">POPULAR</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- Tool Card 5 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-adjust"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>Image Editor</h3>
-                        <p>Basic photo editing tools including brightness, contrast, saturation adjustments.</p>
-                        <div class="tool-card-footer">
-                            <a href="image-editor.html">Use Tool</a>
+                    <a href="image-editor.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-adjust"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>Image Editor</h3>
+                            <p>Basic photo editing tools including brightness, contrast, saturation adjustments.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- Tool Card 6 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-water"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>Watermark Adder</h3>
-                        <p>Add text or image watermarks to protect your photos from unauthorized use.</p>
-                        <div class="tool-card-footer">
-                            <a href="watermark-adder.html">Use Tool</a>
+                    <a href="watermark-adder.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-water"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>Watermark Adder</h3>
+                            <p>Add text or image watermarks to protect your photos from unauthorized use.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -689,87 +690,99 @@
             <div class="tools-grid">
                 <!-- PDF Tool Card 1 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-file-pdf"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>PDF Compressor</h3>
-                        <p>Reduce PDF file size while maintaining quality. Perfect for email attachments.</p>
-                        <div class="tool-card-footer">
-                            <a href="pdf-compressor.html">Use Tool</a>
-                            <span class="popular-badge">POPULAR</span>
+                    <a href="pdf-compressor.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-file-pdf"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>PDF Compressor</h3>
+                            <p>Reduce PDF file size while maintaining quality. Perfect for email attachments.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                                <span class="popular-badge">POPULAR</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- PDF Tool Card 2 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-exchange-alt"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>PDF to Word</h3>
-                        <p>Convert PDF files to editable Word documents while preserving formatting.</p>
-                        <div class="tool-card-footer">
-                            <a href="pdf-to-word.html">Use Tool</a>
+                    <a href="pdf-to-word.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-exchange-alt"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>PDF to Word</h3>
+                            <p>Convert PDF files to editable Word documents while preserving formatting.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- PDF Tool Card 3 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-file-word"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>Word to PDF</h3>
-                        <p>Convert Word documents to PDF format with a single click.</p>
-                        <div class="tool-card-footer">
-                            <a href="word-to-pdf.html">Use Tool</a>
+                    <a href="word-to-pdf.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-file-word"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>Word to PDF</h3>
+                            <p>Convert Word documents to PDF format with a single click.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- PDF Tool Card 4 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>PDF Protector</h3>
-                        <p>Add passwords and permissions to your PDF files to restrict access.</p>
-                        <div class="tool-card-footer">
-                            <a href="pdf-protector.html">Use Tool</a>
+                    <a href="pdf-protector.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-lock"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>PDF Protector</h3>
+                            <p>Add passwords and permissions to your PDF files to restrict access.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- PDF Tool Card 5 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-file-merge"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>PDF Merger</h3>
-                        <p>Combine multiple PDF files into a single document in the order you prefer.</p>
-                        <div class="tool-card-footer">
-                            <a href="pdf-merger.html">Use Tool</a>
+                    <a href="pdf-merger.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-file-merge"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>PDF Merger</h3>
+                            <p>Combine multiple PDF files into a single document in the order you prefer.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
                 
                 <!-- PDF Tool Card 6 -->
                 <div class="tool-card">
-                    <div class="tool-card-img">
-                        <i class="fas fa-file-image"></i>
-                    </div>
-                    <div class="tool-card-body">
-                        <h3>PDF to JPG</h3>
-                        <p>Convert PDF pages to high-quality JPG images for easy sharing.</p>
-                        <div class="tool-card-footer">
-                            <a href="pdf-to-jpg.html">Use Tool</a>
+                    <a href="pdf-to-jpg.html" class="tool-card-link">
+                        <div class="tool-card-img">
+                            <i class="fas fa-file-image"></i>
                         </div>
-                    </div>
+                        <div class="tool-card-body">
+                            <h3>PDF to JPG</h3>
+                            <p>Convert PDF pages to high-quality JPG images for easy sharing.</p>
+                            <div class="tool-card-footer">
+                                <span>Use Tool</span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
